@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="to2-Pp-VmH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="FUE-6T-jCa">
+            <objects>
+                <viewController id="to2-Pp-VmH" customClass="ViewController" customModule="DemoProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vAK-Qx-l9v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iat-JL-QZn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording Project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hro-VR-gBw">
+                                        <rect key="frame" x="136" y="14" width="142.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XRv-P4-92K"/>
+                                    <constraint firstItem="Hro-VR-gBw" firstAttribute="centerX" secondItem="Iat-JL-QZn" secondAttribute="centerX" id="YfM-hT-n0Z"/>
+                                    <constraint firstItem="Hro-VR-gBw" firstAttribute="centerY" secondItem="Iat-JL-QZn" secondAttribute="centerY" id="qGa-zk-ZSQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4LC-OG-fBw">
+                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8dM-Sx-LRL">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="768"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A6c-uD-hEN">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="249.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YA0-Lf-dV4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Recording" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8e4-3U-Zwi">
+                                                                <rect key="frame" x="18" y="8" width="388" height="34"/>
+                                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="8e4-3U-Zwi" firstAttribute="top" secondItem="YA0-Lf-dV4" secondAttribute="topMargin" id="EEm-Gq-UpO"/>
+                                                            <constraint firstAttribute="height" constant="50" id="Jgm-Ch-w92"/>
+                                                            <constraint firstAttribute="trailingMargin" secondItem="8e4-3U-Zwi" secondAttribute="trailing" id="eow-F8-oOG"/>
+                                                            <constraint firstItem="8e4-3U-Zwi" firstAttribute="leading" secondItem="YA0-Lf-dV4" secondAttribute="leadingMargin" constant="10" id="kit-vF-lWW"/>
+                                                            <constraint firstAttribute="bottomMargin" secondItem="8e4-3U-Zwi" secondAttribute="bottom" id="m5h-5D-wfs"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UC3-9r-8A1">
+                                                        <rect key="frame" x="8" y="50" width="398" height="191.5"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnE-C5-iM6">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="191.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCf-Ir-CEh">
+                                                                        <rect key="frame" x="8" y="8" width="173" height="175.5"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                                                        <state key="normal" title="Record">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <integer key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="videoRecAction:" destination="to2-Pp-VmH" eventType="touchUpInside" id="Pq5-P5-BSq"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="kCf-Ir-CEh" firstAttribute="top" secondItem="rnE-C5-iM6" secondAttribute="topMargin" id="DCL-HX-0f5"/>
+                                                                    <constraint firstItem="kCf-Ir-CEh" firstAttribute="leading" secondItem="rnE-C5-iM6" secondAttribute="leadingMargin" id="NYG-Gf-HEt"/>
+                                                                    <constraint firstAttribute="bottomMargin" secondItem="kCf-Ir-CEh" secondAttribute="bottom" id="cV0-xr-L7K"/>
+                                                                    <constraint firstAttribute="trailingMargin" secondItem="kCf-Ir-CEh" secondAttribute="trailing" id="dYH-bY-6o6"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJM-Y5-Zd4">
+                                                                <rect key="frame" x="209" y="0.0" width="189" height="191.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYc-4Y-bCt">
+                                                                        <rect key="frame" x="8" y="8" width="173" height="175.5"/>
+                                                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                                                        <state key="normal" title="Play">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <integer key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="videoPlayAction:" destination="to2-Pp-VmH" eventType="touchUpInside" id="fdo-LR-5G6"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottomMargin" secondItem="mYc-4Y-bCt" secondAttribute="bottom" id="5m3-4E-5qd"/>
+                                                                    <constraint firstItem="mYc-4Y-bCt" firstAttribute="top" secondItem="NJM-Y5-Zd4" secondAttribute="topMargin" id="GSa-LJ-HPa"/>
+                                                                    <constraint firstAttribute="trailingMargin" secondItem="mYc-4Y-bCt" secondAttribute="trailing" id="WeO-zu-ile"/>
+                                                                    <constraint firstItem="mYc-4Y-bCt" firstAttribute="leading" secondItem="NJM-Y5-Zd4" secondAttribute="leadingMargin" id="uFi-bb-xPb"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="YA0-Lf-dV4" secondAttribute="trailing" id="ANL-vI-0Fh"/>
+                                                    <constraint firstItem="YA0-Lf-dV4" firstAttribute="leading" secondItem="A6c-uD-hEN" secondAttribute="leading" id="QrN-m9-YcK"/>
+                                                    <constraint firstItem="YA0-Lf-dV4" firstAttribute="top" secondItem="A6c-uD-hEN" secondAttribute="top" id="U4w-uu-QOe"/>
+                                                    <constraint firstItem="UC3-9r-8A1" firstAttribute="top" secondItem="YA0-Lf-dV4" secondAttribute="bottom" id="UHi-LC-V9R"/>
+                                                    <constraint firstAttribute="bottomMargin" secondItem="UC3-9r-8A1" secondAttribute="bottom" id="XTH-tV-S1N"/>
+                                                    <constraint firstItem="UC3-9r-8A1" firstAttribute="leading" secondItem="A6c-uD-hEN" secondAttribute="leadingMargin" id="aA6-NE-iut"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="UC3-9r-8A1" secondAttribute="trailing" id="lYw-xe-JFi"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5DP-bd-7cR">
+                                                <rect key="frame" x="0.0" y="259.5" width="414" height="249"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKS-CV-S1b">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen Recording" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YD0-ts-Agw">
+                                                                <rect key="frame" x="18" y="8" width="388" height="24"/>
+                                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="Ivg-Zm-1cW"/>
+                                                            <constraint firstAttribute="trailingMargin" secondItem="YD0-ts-Agw" secondAttribute="trailing" id="Tlw-Wc-1IC"/>
+                                                            <constraint firstItem="YD0-ts-Agw" firstAttribute="leading" secondItem="UKS-CV-S1b" secondAttribute="leadingMargin" constant="10" id="cmV-bX-bQp"/>
+                                                            <constraint firstItem="YD0-ts-Agw" firstAttribute="top" secondItem="UKS-CV-S1b" secondAttribute="topMargin" id="k7F-xL-Nud"/>
+                                                            <constraint firstAttribute="bottomMargin" secondItem="YD0-ts-Agw" secondAttribute="bottom" id="qNO-B8-1Ob"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ded-As-2Wf">
+                                                        <rect key="frame" x="8" y="40" width="398" height="159"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O30-w8-PoF">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="159"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8y-GY-uX7">
+                                                                        <rect key="frame" x="8" y="8" width="173" height="143"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                                                        <state key="normal" title="Record">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <integer key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="screenRecAction:" destination="to2-Pp-VmH" eventType="touchUpInside" id="9bA-fc-J2F"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="x8y-GY-uX7" firstAttribute="top" secondItem="O30-w8-PoF" secondAttribute="topMargin" id="36w-Sy-88g"/>
+                                                                    <constraint firstItem="x8y-GY-uX7" firstAttribute="leading" secondItem="O30-w8-PoF" secondAttribute="leadingMargin" id="NMc-cg-rD6"/>
+                                                                    <constraint firstAttribute="trailingMargin" secondItem="x8y-GY-uX7" secondAttribute="trailing" id="bXJ-so-mvw"/>
+                                                                    <constraint firstAttribute="bottomMargin" secondItem="x8y-GY-uX7" secondAttribute="bottom" id="eiK-fu-yd9"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4e-sV-UBK">
+                                                                <rect key="frame" x="209" y="0.0" width="189" height="159"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eX-sD-PoK">
+                                                                        <rect key="frame" x="8" y="8" width="173" height="143"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                                                        <state key="normal" title="Play">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <integer key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="screenPlayAction:" destination="to2-Pp-VmH" eventType="touchUpInside" id="JpX-5N-WaU"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="3eX-sD-PoK" firstAttribute="top" secondItem="m4e-sV-UBK" secondAttribute="topMargin" id="8xN-sZ-FM7"/>
+                                                                    <constraint firstAttribute="trailingMargin" secondItem="3eX-sD-PoK" secondAttribute="trailing" id="Bh0-nI-QWr"/>
+                                                                    <constraint firstAttribute="bottomMargin" secondItem="3eX-sD-PoK" secondAttribute="bottom" id="J61-rK-Xw8"/>
+                                                                    <constraint firstItem="3eX-sD-PoK" firstAttribute="leading" secondItem="m4e-sV-UBK" secondAttribute="leadingMargin" id="bnO-cg-613"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sS7-7E-wdW">
+                                                        <rect key="frame" x="20" y="199" width="374" height="50"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Something to See in Recording" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XhU-f4-LIq">
+                                                                <rect key="frame" x="0.0" y="10" width="374" height="40"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" returnKeyType="continue" enablesReturnKeyAutomatically="YES"/>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="XhU-f4-LIq" secondAttribute="trailing" id="25K-rd-RjO"/>
+                                                            <constraint firstAttribute="height" constant="50" id="NZg-HW-MdY"/>
+                                                            <constraint firstAttribute="bottom" secondItem="XhU-f4-LIq" secondAttribute="bottom" id="mcY-bf-J3k"/>
+                                                            <constraint firstItem="XhU-f4-LIq" firstAttribute="top" secondItem="sS7-7E-wdW" secondAttribute="top" constant="10" id="qmr-x9-Jzw"/>
+                                                            <constraint firstItem="XhU-f4-LIq" firstAttribute="leading" secondItem="sS7-7E-wdW" secondAttribute="leading" id="zVU-WA-7zA"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="ded-As-2Wf" firstAttribute="leading" secondItem="5DP-bd-7cR" secondAttribute="leadingMargin" id="1Fc-Dj-HGp"/>
+                                                    <constraint firstItem="ded-As-2Wf" firstAttribute="top" secondItem="UKS-CV-S1b" secondAttribute="bottom" id="5hL-3A-94d"/>
+                                                    <constraint firstAttribute="trailing" secondItem="UKS-CV-S1b" secondAttribute="trailing" id="Fd7-4Q-lEd"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sS7-7E-wdW" secondAttribute="bottom" id="Jxs-81-29U"/>
+                                                    <constraint firstItem="sS7-7E-wdW" firstAttribute="leading" secondItem="5DP-bd-7cR" secondAttribute="leading" constant="20" id="SSj-Qm-QBq"/>
+                                                    <constraint firstItem="UKS-CV-S1b" firstAttribute="leading" secondItem="5DP-bd-7cR" secondAttribute="leading" id="U0O-Ut-1kg"/>
+                                                    <constraint firstItem="UKS-CV-S1b" firstAttribute="top" secondItem="5DP-bd-7cR" secondAttribute="top" id="Uex-Ha-cX3"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="ded-As-2Wf" secondAttribute="trailing" id="qya-qv-vDb"/>
+                                                    <constraint firstItem="sS7-7E-wdW" firstAttribute="top" secondItem="ded-As-2Wf" secondAttribute="bottom" id="uYU-GS-uJg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sS7-7E-wdW" secondAttribute="trailing" constant="20" id="xdK-qL-v9N"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dxb-8F-IGs">
+                                                <rect key="frame" x="0.0" y="518.5" width="414" height="249.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSO-9j-5PT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio Recording" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Tz-hQ-iNi">
+                                                                <rect key="frame" x="18" y="8" width="388" height="34"/>
+                                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailingMargin" secondItem="2Tz-hQ-iNi" secondAttribute="trailing" id="9AW-3E-PTy"/>
+                                                            <constraint firstAttribute="bottomMargin" secondItem="2Tz-hQ-iNi" secondAttribute="bottom" id="Hwt-aY-3dT"/>
+                                                            <constraint firstAttribute="height" constant="50" id="MQ7-mX-Pny"/>
+                                                            <constraint firstItem="2Tz-hQ-iNi" firstAttribute="top" secondItem="FSO-9j-5PT" secondAttribute="topMargin" id="WkL-PS-6wX"/>
+                                                            <constraint firstItem="2Tz-hQ-iNi" firstAttribute="leading" secondItem="FSO-9j-5PT" secondAttribute="leadingMargin" constant="10" id="Xco-Nn-Fql"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vp8-s8-RHy">
+                                                        <rect key="frame" x="8" y="50" width="398" height="191.5"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8F-TV-ZTi">
+                                                                <rect key="frame" x="0.0" y="0.0" width="189" height="191.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAA-X9-qoe">
+                                                                        <rect key="frame" x="8" y="8" width="173" height="175.5"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                                                        <state key="normal" title="Record">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <integer key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="audioRecBtn:" destination="to2-Pp-VmH" eventType="touchUpInside" id="q3n-E4-vcP"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailingMargin" secondItem="oAA-X9-qoe" secondAttribute="trailing" id="7qi-G5-HZC"/>
+                                                                    <constraint firstItem="oAA-X9-qoe" firstAttribute="leading" secondItem="J8F-TV-ZTi" secondAttribute="leadingMargin" id="KrF-R8-hBY"/>
+                                                                    <constraint firstAttribute="bottomMargin" secondItem="oAA-X9-qoe" secondAttribute="bottom" id="OPu-Ht-806"/>
+                                                                    <constraint firstItem="oAA-X9-qoe" firstAttribute="top" secondItem="J8F-TV-ZTi" secondAttribute="topMargin" id="VeO-RY-kVn"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSP-hs-vqX">
+                                                                <rect key="frame" x="209" y="0.0" width="189" height="191.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XL1-vh-OGJ">
+                                                                        <rect key="frame" x="8" y="8" width="173" height="175.5"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                                                        <state key="normal" title="Play">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <integer key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="audioPlayBtn:" destination="to2-Pp-VmH" eventType="touchUpInside" id="LLF-rH-ElY"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="XL1-vh-OGJ" firstAttribute="top" secondItem="mSP-hs-vqX" secondAttribute="topMargin" id="3a3-tw-rVz"/>
+                                                                    <constraint firstAttribute="bottomMargin" secondItem="XL1-vh-OGJ" secondAttribute="bottom" id="BAO-Xs-t7h"/>
+                                                                    <constraint firstAttribute="trailingMargin" secondItem="XL1-vh-OGJ" secondAttribute="trailing" id="RnV-rr-gc6"/>
+                                                                    <constraint firstItem="XL1-vh-OGJ" firstAttribute="leading" secondItem="mSP-hs-vqX" secondAttribute="leadingMargin" id="a0M-lu-X0a"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="vp8-s8-RHy" firstAttribute="leading" secondItem="Dxb-8F-IGs" secondAttribute="leadingMargin" id="49Y-rK-raJ"/>
+                                                    <constraint firstAttribute="bottomMargin" secondItem="vp8-s8-RHy" secondAttribute="bottom" id="49x-37-YI3"/>
+                                                    <constraint firstItem="FSO-9j-5PT" firstAttribute="leading" secondItem="Dxb-8F-IGs" secondAttribute="leading" id="KVG-ui-gXB"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="vp8-s8-RHy" secondAttribute="trailing" id="Lym-OM-HRs"/>
+                                                    <constraint firstItem="FSO-9j-5PT" firstAttribute="top" secondItem="Dxb-8F-IGs" secondAttribute="top" id="j2y-Eg-2Du"/>
+                                                    <constraint firstAttribute="trailing" secondItem="FSO-9j-5PT" secondAttribute="trailing" id="rc9-B4-si4"/>
+                                                    <constraint firstItem="vp8-s8-RHy" firstAttribute="top" secondItem="FSO-9j-5PT" secondAttribute="bottom" id="tVo-BG-0vd"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="8dM-Sx-LRL" firstAttribute="top" secondItem="4LC-OG-fBw" secondAttribute="top" id="WYC-Ru-pdc"/>
+                                    <constraint firstAttribute="trailing" secondItem="8dM-Sx-LRL" secondAttribute="trailing" id="XT3-Zo-2gn"/>
+                                    <constraint firstItem="8dM-Sx-LRL" firstAttribute="leading" secondItem="4LC-OG-fBw" secondAttribute="leading" id="h3i-M7-IkI"/>
+                                    <constraint firstAttribute="bottom" secondItem="8dM-Sx-LRL" secondAttribute="bottom" id="pI9-hG-7BJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nRF-LS-AFB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4LC-OG-fBw" firstAttribute="leading" secondItem="nRF-LS-AFB" secondAttribute="leading" id="Bs4-ku-y5G"/>
+                            <constraint firstItem="Iat-JL-QZn" firstAttribute="leading" secondItem="nRF-LS-AFB" secondAttribute="leading" id="KNW-ad-dME"/>
+                            <constraint firstItem="nRF-LS-AFB" firstAttribute="trailing" secondItem="4LC-OG-fBw" secondAttribute="trailing" id="QCv-xg-eqD"/>
+                            <constraint firstItem="Iat-JL-QZn" firstAttribute="top" secondItem="nRF-LS-AFB" secondAttribute="top" id="RCr-U6-ecY"/>
+                            <constraint firstItem="4LC-OG-fBw" firstAttribute="top" secondItem="Iat-JL-QZn" secondAttribute="bottom" id="nqH-TF-GE2"/>
+                            <constraint firstItem="nRF-LS-AFB" firstAttribute="bottom" secondItem="4LC-OG-fBw" secondAttribute="bottom" id="o09-C5-TC4"/>
+                            <constraint firstItem="nRF-LS-AFB" firstAttribute="trailing" secondItem="Iat-JL-QZn" secondAttribute="trailing" id="pAU-kc-IYd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="audioPlayBtn" destination="XL1-vh-OGJ" id="53m-tY-Kaq"/>
+                        <outlet property="audioRecBtn" destination="oAA-X9-qoe" id="MZK-sz-D53"/>
+                        <outlet property="mainTextField" destination="XhU-f4-LIq" id="JTE-NH-CNK"/>
+                        <outlet property="screenPlayBtn" destination="3eX-sD-PoK" id="ju1-lw-44U"/>
+                        <outlet property="screenRecBtn" destination="x8y-GY-uX7" id="R3W-0n-JZQ"/>
+                        <outlet property="videoPlayBtn" destination="mYc-4Y-bCt" id="XAu-on-5MS"/>
+                        <outlet property="videoRecBtn" destination="kCf-Ir-CEh" id="kgL-vv-JkZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kEu-XK-mkD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="78"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
